@@ -1,0 +1,23 @@
+
+Example call:
+
+chkLinks merle sunlab.cse.lehigh.edu /home/merle/WWW-data/cse109.fall2021/index.html 
+
+You will be prompted to enter password! 
+
+Some notes:
+1. Search only for "http" and "https" protocols.  -->implemented
+2. Ensure href has "://" after the protocol and before the server name.  -->implemented 
+3. Place uniquely-named downloaded files into /tmp.  -->implemented 
+4. Ensure downloaded files have the PID in their name so your files 
+   do not interfere with other students running their code.  -->implemented
+5. Remove any files created in /tmp when done (use unlink). -->unlink wrapped and implemented
+6. Do not use global variables. --> yes
+7. Write modular code. --> 1 method/screen
+8. Bonus (5): prompt user for password and display '*' for each character entered. --> implemented
+
+
+Sources:
+https://www.daniweb.com/programming/software-development/threads/11811/replacement-of-getch
+--> int getch() is outlined in this blog by Rhoit 13 years ago
+--> can get hidden char without having to do system("stty -echo") which can interfer with terminal foramtting
